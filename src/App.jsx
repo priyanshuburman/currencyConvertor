@@ -9,8 +9,6 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const handleCurrChange = (e) => setCurrency(e.target.value)
-
   const currencyInfo = useCurrencyInfo(from)
 
   const options = Object.keys(currencyInfo) // from data which we are getting from the api
